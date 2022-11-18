@@ -1,0 +1,81 @@
+@import "variables";
+
+.form {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 16px;
+  &__title {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    color: black;
+    margin: 0 auto 16px;
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  &__fieldset {
+    position: relative;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #646464;
+  }
+
+  &__button {
+    width: 100%;
+    margin: 16px auto 0;
+  }
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkGray;
+  position: absolute;
+  margin: 19px 16px;
+  pointer-events: none;
+  left: 0;
+}
+
+.input {
+  background: #F5F6FE;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $darkGray;
+  border: 1px solid transparent;
+  padding: 10px 16px;
+  height: 56px;
+
+  &:focus {
+    &+ .label {
+      font-size: 11px;
+      line-height: 13px;
+      color: $blue;
+      margin-top: 4px;
+    }
+
+    outline: none;
+    border: 1px solid $blue;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #646464;
+  }
+}
+
+

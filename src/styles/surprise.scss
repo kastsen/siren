@@ -1,0 +1,16 @@
+@import "variables";
+
+.surprise {
+  border: 1px solid $orange;
+  border-radius: 8px;
+  padding: 8px;
+  background: #F5F6FE;
+  margin: 0 auto;
+  &__text {
+    padding: 0 8px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

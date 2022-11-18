@@ -1,0 +1,26 @@
+@import "variables";
+
+.zipForm {
+  margin-bottom: 44px;
+  &__container {
+    background: $blue;
+    background-size: cover;
+    border-radius: 24px;
+    padding: 24px;
+    @media (min-width: 768px) {
+      padding: 120px 96px 96px;
+      background: $blue url("../assets/zip-form-bg.png") center center no-repeat;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    color: white;
+    margin: 0 auto 16px;
+  }
+  &__formContent {
+    max-width: 320px;
+  }
+}

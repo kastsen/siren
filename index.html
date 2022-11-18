@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yury Kastsen - Test Task</title>
+    <meta name="description" content="Yury Kastsen - test task">
+    <meta name="keywords" content="Yury Kastsen test task">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between">
+                <div class="header__logo logo">
+                    <div class="logo__name">HomeBuddy<span>.</span></div>
+                    <div class="logo__description">for homeowners</div>
+                </div>
+                <a href="#zipForm" class="header__formLink">Link to form</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class='blockMain d-flex align-items-center'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class='blockMain__title'>
+                        How <span class="bg-green">Over 410,000 Americans</span>
+                        Increased Their Property Value
+                        <span class="bg-green">In Under 6 Hours*</span> With This Simple Upgrade.
+                    </h1>
+                    <p class='blockMain__description'>
+                        Ideal for detached and semi-detached homes with sloped roofs.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="<%= require('./src/assets/main-img.png') %>" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="features text-sm-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 features__item d-flex align-items-center d-sm-block">
+                    <img src="<%= require('./src/assets/icons/i-lifetime.svg') %>" alt="">
+                    <h2 class="features__title">
+                        Lifetime warranty with 100% no-clog guarantee
+                    </h2>
+                </div>
+                <div class="col-sm-6 col-md-3 features__item d-flex align-items-center d-sm-block">
+                    <img src="<%= require('./src/assets/icons/i-fits.svg') %>" alt="">
+                    <h2 class="features__title">
+                        Fits most homes
+                    </h2>
+                </div>
+                <div class="col-sm-6 col-md-3 features__item d-flex align-items-center d-sm-block">
+                    <img src="<%= require('./src/assets/icons/i-pig.svg') %>" alt="">
+                    <h2 class="features__title">
+                        Installs over existing gutters saving you thousands
+                    </h2>
+                </div>
+                <div class="col-sm-6 col-md-3 features__item d-flex align-items-center d-sm-block">
+                    <img src="<%= require('./src/assets/icons/i-star.svg') %>" alt=""><br>
+                    <img src="<%= require('./src/assets/icons/i-rating.svg') %>" alt="">
+                    <h2 class="features__title">
+                        Сustomer rating
+                    </h2>
+                </div>
+                <div class="features__surprise surprise d-flex justify-content-between align-items-start">
+                    <img src="<%= require('./src/assets/icons/pig.svg') %>" alt="">
+                    <p class="surprise__text">
+                        You will be surprised how affordable gutter guards are!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="zipForm" id="zipForm">
+        <div class="container zipForm__container">
+            <div class="row">
+                <div class="col-12 text-sm-center">
+                    <h2 class="zipForm__title">
+                        See How Much Gutter Guards Cost In The XX, XXX Area
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <form action="" class="zipForm__form form">
+                        <fieldset class="zipForm__formContent form__fieldset">
+                            <h3 class="form__title">
+                                What is your ZIP Code?
+                            </h3>
+                            <input type="text" placeholder="" class="form__input input" id="zipCode">
+                            <label for="zipCode" class="form__label label">Enter ZIP Code</label>
+                            <p class="form__description">
+                                Free, no-obligation estimates.
+                            </p>
+                            <input type="submit" class="form__button button" value="Get estimate" id="form__button">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-lg-center">
+                <div class="footer__logo logo">
+                    <div class="logo__name">HomeBuddy<span>.</span></div>
+                </div>
+                <ul class="footer__menu menu d-lg-flex">
+                    <li><a href="" class="menu__link">Terms of Use</a></li>
+                    <li><a href="" class="menu__link">Privacy Policy</a></li>
+                    <li><a href="" class="menu__link">Cookie Policy</a></li>
+                    <li><a href="" class="menu__link">Do Not Sell My Personal Information</a></li>
+                    <li><a href="" class="menu__link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="consumer consumer_invisible">
+    <a href=""><span class="consumer__closeIcon closeIcon"></span></a>
+    <div class="consumer__progressbar"></div>
+
+
+    <div class="consumer__container container">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center text-center">
+                <h3 class="consumer__title">Are you homeowner or authrized to make property changes?</h3>
+                <form action="" class="consumer__choseForm choseForm">
+                    <div class="d-flex">
+                        <label class="choseForm__control d-flex justify-content-center align-items-center flex-wrap flex-column" for="choseForm__yes">
+                            <input type="radio" name="checkbox" id="choseForm__yes" class="choseForm__input" value="yes"/>
+                            <span class="choseForm__icon">
+                                <img src="<%= require('./src/assets/icons/yes.svg') %>" alt="">
+                            </span>
+                            Yes
+                        </label>
+
+                        <label class="choseForm__control d-flex justify-content-center align-items-center flex-wrap flex-column" for="choseForm__no">
+                            <span class="choseForm__icon">
+                                <img src="<%= require('./src/assets/icons/no.svg') %>" alt="">
+                            </span>
+                            <input type="radio" name="checkbox" id="choseForm__no" class="choseForm__input" value="no"/>
+                            No
+                        </label>
+                    </div>
+                    <button class="choseForm__button button button_disabled">Next</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="consumer__container consumer__container_invisible container text-center">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="consumer__title userForm__title">
+                    Who should I prepare this estimate for?
+                </h3>
+                <div class="consumer__choseText">
+                    Your choice: <span id="choseText">Yes</span>
+                </div>
+
+                <form action="" class="consumer__userForm userForm">
+                    <fieldset class="userForm__fieldset">
+                        <input type="text" placeholder="" class="userForm__input form__input input" id="name">
+                        <label for="name" class="form__label label">Full name</label>
+                    </fieldset>
+                    <fieldset class="userForm__fieldset">
+                        <input type="text" placeholder="" class="userForm__input form__input input" id="email">
+                        <label for="email" class="form__label label">Email address</label>
+                    </fieldset>
+
+                    <button class="userForm__button button">Next</button>
+                    <br>
+                    <span class="userForm__securityText">
+                        Safe, Secure and Confidential
+                    </span>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

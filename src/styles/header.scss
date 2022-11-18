@@ -1,0 +1,15 @@
+.header {
+
+  position: absolute;
+  width: 100%;
+  padding: 8px 0;
+
+  &__formLink {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+}

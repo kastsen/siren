@@ -1,0 +1,22 @@
+// colors
+
+$blue: #2F54EB;
+$green: #52C41A;
+$orange: #FA8C16;
+$darkGray: #222222;
+
+
+// @media sizes
+
+//// laptop
+$laptop-min-width: 1200px;
+
+//// tablet
+$tablet-landscape-max-width: 1199.98px;
+$medium-devices-max-width: 991.98px;
+$large-devices-min-width: 992px;
+$tablet-portrait-min-width: 768px;
+
+//// phone
+$phone-landscape-max-width: 767.98px;
+$phone-portrait-max-width: 575.98px;

@@ -1,0 +1,113 @@
+@import "variables";
+
+.consumer {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  &_invisible {
+    display: none;
+  }
+
+  &__progressbar {
+    height: 4px;
+    width: 50%;
+    background: #52C41A;
+    position: absolute;
+    top: 72px;
+    left: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    color: $darkGray;
+  }
+  &__container {
+    margin-top: 172px;
+    max-width: 800px;
+    &__invisible {
+      display: none;
+    }
+  }
+  &__choseText {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #646464;
+  }
+}
+
+.closeIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../assets/icons/close.svg") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 24px;
+  right: 40px;
+}
+
+.choseForm {
+  margin: 0 auto;
+  &__control {
+    width: 168px;
+    height: 140px;
+    border: 2px solid #F5F6FE;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 8px 24px;
+    cursor: pointer;
+    &:hover, &_active {
+      border-color: $orange;
+
+    }
+  }
+
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+  }
+
+}
+
+.userForm {
+  &__fieldset {
+    position: relative;
+    max-width: 250px;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 4px;
+  }
+  &__input {
+    margin-bottom: 16px;
+  }
+  &__securityText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #646464;
+  }
+  &__button {
+    margin-bottom: 16px;
+  }
+  &__securityText {
+    background: url("../assets/icons/lock.svg") center left no-repeat;
+    padding-left: 24px;
+  }
+}
